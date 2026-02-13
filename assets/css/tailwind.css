@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-slate-950 text-slate-100 antialiased;
+  }
+}
+
+@layer components {
+  .container-section {
+    @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .section-title {
+    @apply text-3xl sm:text-4xl font-semibold tracking-tight text-slate-50 mb-6;
+  }
+
+  .section-subtitle {
+    @apply text-sm uppercase tracking-[0.2em] text-sky-400 mb-2;
+  }
+
+  .card-surface {
+    @apply rounded-2xl border border-slate-800/80 bg-slate-900/60 backdrop-blur shadow-lg shadow-sky-500/5;
+  }
+}
